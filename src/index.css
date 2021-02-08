@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main {
+  background: whitesmoke;
+  color: black;
+}
+.search-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+}
+.search-bar {
+  padding: 0.75rem;
+  font-size: 2rem;
+  object-fit: stretch;
+  border-radius: 0.45rem;
+}
+.search-btn {
+  display: 'flex';
+  align-self: center;
+}
+.vid-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  padding: 2rem;
+  /* grid-template-columns: 5 1fr;
+  grid-template-rows: repeat(auto-fill); */
+}
+.vid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.vid-player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* overflow: hidden; */
+  width: 100vw;
+  height: 75vh;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%; */
+}
