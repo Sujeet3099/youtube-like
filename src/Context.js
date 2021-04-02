@@ -12,6 +12,7 @@ const AppProvider = ({ children }) => {
     e.preventDefault();
     // TODO request videos from api and fetch them
     const data = await youtube.get('/search', { params: { q: searchVid } });
+    // console.log(data);
     setVidData(data.data.items);
   };
   const singleVideo = (id, idx) => {
